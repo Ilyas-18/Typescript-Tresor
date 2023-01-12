@@ -42,7 +42,7 @@ export abstract class Gegenstand {
      * a) Getter für die Property _wert: get wert: number (return this._wert;)
      * <-- Perfekt!
      * b) Methode: getWert: number (return this._wert;)
-     * <-- Hier ungeeignet!
+     * <-- Hier ungeeignet/Funktioniert nicht!
      * 
      * 
      * Beispiel:
@@ -83,6 +83,5 @@ export abstract class Gegenstand {
       let text: string = "\nID: " + this.id;
       text += "\nVersicherungswert: " + this.wert;
       return text;
+     }
     }
-    
-  }
